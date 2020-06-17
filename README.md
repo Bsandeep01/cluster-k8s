@@ -1,8 +1,8 @@
 # cluster-k8s
 
-Possible to create multi-node kubernetes cluster compared to minikube.
-It creates a single node master. No High Availability for master node available yet.
-You can create/join one or more dedicated worker-nodes.
+#Possible to create multi-node kubernetes cluster compared to minikube.
+#It creates a single node master. No High Availability for master node available yet.
+#You can create/join one or more dedicated worker-nodes.
 
 System-Requirnment: 
 Master-Node: 
