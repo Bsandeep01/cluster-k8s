@@ -15,4 +15,5 @@ minimum 1GiB RAM
 OS:CentOs                                                                                                                                 
 
 #Disable firewall service.                                                                                                   
-#Disable Disable SELinux.                                                                                                                                                                                                                  
+#Disable Disable SELinux.                                                                                                                 
+#Disable SWAP
