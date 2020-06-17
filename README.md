@@ -11,9 +11,11 @@ minimum 2GiB RAM
 Worker-Node:                                                                                                                               
 minimum 1 core cpu                                                                                                                         
 minimum 1GiB RAM                                                                                                                           
+Docker-Engine running on every node (use:> docker_engine_script.sh)                                                                             
 
 OS:CentOs                                                                                                                                 
 
 #Disable firewall service.                                                                                                   
 #Disable Disable SELinux.                                                                                                                 
 #Disable SWAP
+(use:> config.yml)
