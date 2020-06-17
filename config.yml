@@ -1,0 +1,28 @@
+- hosts: all
+  become: yes
+  tasks:
+
+   - name: disable firewall service
+     service:
+        name: firewalld
+        state: stopped
+        enabled: false
+
+   - name: Disable SWAP 
+     shell: |
+       swapoff -a
+
+   - name: Disable SWAP in fstab 
+     lineinfile:
+       path: /etc/fstab
+       regexp: 'swap'
+       state: absent
+
+   - name: disable SELinux
+     command: setenforce 0
+     ignore_errors: yes
+
+   - name: disable SELinux on reboot
+     selinux:
+       state: disabled
+
